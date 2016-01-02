@@ -3,4 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="facebook_app_id">1128930943792989</string>
     <string name="sign_in">sign_in</string>
+    <string name="uid">facebook_uid</string>
+    <string name="first_name">first_name</string>
+    <string name="last_name">last_name</string>
 </resources>

@@ -52,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+            sp.edit().putBoolean("@string/sign_in", false).commit();
+            sp.edit().putString("@string/uid", null).commit();
+            sp.edit().putString("@string/first_name", null).commit();
+            sp.edit().putString("@string/last_name", null).commit();
+
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
             return true;
         }
 
